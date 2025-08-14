@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="menu">
+        <h1 class="section_title">Desserts</h1>
+        <section class="menu-row">
+          <article class="menu_card">
+            <div class="card_image"></div>
+            <button class="btn-add">Add to Cart</button>
+            <p class="card_product-description">Waffle</p>
+            <p class="card_product-name">Waffle with Berries</p>
+            <p class="card_product-price">$6.50</p>
+          </article>
+          <article class="menu_card">
+            <div class="card_image"></div>
+            <button class="btn-add">Add to Cart</button>
+            <p class="card_product-description">Waffle</p>
+            <p class="card_product-name">Waffle with Berries</p>
+            <p class="card_product-price">$6.50</p>
+          </article>
+          <article class="menu_card">
+            <div class="card_image"></div>
+            <button class="btn-add">Add to Cart</button>
+            <p class="card_product-description">Waffle</p>
+            <p class="card_product-name">Waffle with Berries</p>
+            <p class="card_product-price">$6.50</p>
+          </article>
+        </section>
+      </section>
+      <section class="cart">
+        <h2 class="cart_title">Your Cart (<span id="cart_itens"></span>)</h2>
+        <div class="cart_product-list">
+          <article class="cart_product"></article>
+        </div>
+        <div class="cart_total-label">
+          <p class="">Order Total</p>
+          <span class="cart_total-price" id="cart_total-price"></span>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
