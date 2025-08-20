@@ -1,41 +1,12 @@
-/* @font-face{
-  font-family: 'RedHatText';
-  src: local('RedHatText'),
-  url(/assets/fonts/static/RedHatText-Regular.ttf);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face{
-  font-family: 'RedHatText';
-  src: local('RedHatText'),
-  url(/assets/fonts/static/RedHatText-Bold.ttf);
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face{
-  font-family: 'RedHatText';
-  src: local('RedHatText'),
-  url(/assets/fonts/static/RedHatText-SemiBold.ttf);
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face{
-  font-family: 'RedHatText';
-  src: local('RedHatText'),
-  url(/assets/fonts/RedHatText-Italic-VariableFont_wght.ttf);
-  font-weight: 400;
-  font-style: italic;
-} */
-
-:root{
+:root {
   --red: hsl(14, 86%, 42%);
   --green: hsl(159, 69%, 38%);
-  --rose-50:hsl(20, 50%, 98%);
-  --rose-100:hsl(13, 31%, 94%);
-  --rose-300:hsl(14, 25%, 72%);
-  --rose-400:hsl(7, 20%, 60%);
-  --rose-500:hsl(12, 20%, 44%);
-  --rose-900:hsl(14, 65%, 9%);
+  --rose-50: hsl(20, 50%, 98%);
+  --rose-100: hsl(13, 31%, 94%);
+  --rose-300: hsl(14, 25%, 72%);
+  --rose-400: hsl(7, 20%, 60%);
+  --rose-500: hsl(12, 20%, 44%);
+  --rose-900: hsl(14, 65%, 9%);
 }
 
 /* CSS RESET */
@@ -47,29 +18,98 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: "Red Hat Text", sans-serif;
+* {
+  /* outline: 1px dashed orange; */
 }
 
-.main{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 3rem;
-  gap: 10rem;
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background-color: var(--rose-50);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.lg-2-7 {
+  grid-column: 2 / 8;
+}
+
+.lg-8-12 {
+  grid-column: 9 / 12;
 }
 
 /* MENU */
-.menu{
+.menu {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
-.menu-row{
+/* CARD */
+.menu_card {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 15rem;
+  position: relative;
+}
+
+.card_image {
+  background-image: url(../assets/images/image-waffle-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 14.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 11.25rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--rose-500);
+  background-color: white;
+  font-size: clamp(0.7rem, 3vw, 0.8rem);
+}
+
+.cart_icon{
+  width: clamp(1rem, 4vw, 1.3rem);
+}
+
+.card_product-description{
+  margin-top: 1.3rem;
+  color: var(--rose-300);
+  font-size: 0.8rem;
+}
+
+.card_product-name{
+  color: var(--rose-900);
+}
+
+.card_product-price{
+  color: rgb(247, 151, 7);
+  font-weight: 600;
+}
+
+.card_product-name, .card_product-price{
+  font-size: 1rem;
+}
+
+/* CART */
+.cart {
 }
 
 /* ATTRIBUTION */

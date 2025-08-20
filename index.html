@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,34 +19,19 @@
     <title>Frontend Mentor | Product list with cart</title>
   </head>
   <body>
-    <main class="main">
-      <section class="menu">
-        <h1 class="section_title">Desserts</h1>
-        <section class="menu-row">
-          <article class="menu_card">
-            <div class="card_image"></div>
-            <button class="btn-add">Add to Cart</button>
-            <p class="card_product-description">Waffle</p>
-            <p class="card_product-name">Waffle with Berries</p>
-            <p class="card_product-price">$6.50</p>
-          </article>
-          <article class="menu_card">
-            <div class="card_image"></div>
-            <button class="btn-add">Add to Cart</button>
-            <p class="card_product-description">Waffle</p>
-            <p class="card_product-name">Waffle with Berries</p>
-            <p class="card_product-price">$6.50</p>
-          </article>
-          <article class="menu_card">
-            <div class="card_image"></div>
-            <button class="btn-add">Add to Cart</button>
-            <p class="card_product-description">Waffle</p>
-            <p class="card_product-name">Waffle with Berries</p>
-            <p class="card_product-price">$6.50</p>
-          </article>
-        </section>
+    <h1 class="section_title">Desserts</h1>
+    <main class="main row">
+      <section class="menu lg-2-7">
+        <article class="menu_card">
+          <div class="card_image"></div>
+          <button class="btn-add" id="btn_add"><img class="cart_icon" src="assets/images/icon-add-to-cart.svg" alt=""> Add to Cart</button>
+          <p class="card_product-description">Waffle</p>
+          <p class="card_product-name">Waffle with Berries</p>
+          <p class="card_product-price">$6.50</p>
+        </article>
       </section>
-      <section class="cart">
+
+      <section class="cart lg-8-12">
         <h2 class="cart_title">Your Cart (<span id="cart_itens"></span>)</h2>
         <div class="cart_product-list">
           <article class="cart_product"></article>
