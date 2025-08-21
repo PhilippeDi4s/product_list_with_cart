@@ -53,7 +53,7 @@ body {
   color: var(--rose-900);
 }
 
-.section_subtitle{
+.section_subtitle {
   color: var(--rose-300);
 }
 
@@ -171,7 +171,7 @@ body {
 .removeItem_icon {
   width: 5%;
   max-width: 1rem;
-  min-width: .5rem;
+  min-width: 0.5rem;
   cursor: pointer;
 }
 
@@ -180,6 +180,7 @@ body {
   outline: 1px solid var(--rose-400);
   border-radius: 50%;
   outline-offset: 0.1rem;
+  transition: 0.3s ease-in-out;
 }
 
 .cart_product_info-wrapper {
@@ -215,6 +216,7 @@ body {
 .cart_total-label {
   margin-top: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -253,6 +255,11 @@ body {
   color: white;
   margin-top: 1rem;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn_confirm:hover {
+  background-color: hsl(24, 100%, 36%);
 }
 
 /* ORDER CONFIRMATION */
@@ -325,6 +332,50 @@ body {
 }
 
 /* TABLET */
-@media screen and (max-width:56.25rem){
-  
+@media screen and (max-width: 56.25rem) {
+  .md-1-7, .section_title{
+    grid-column: 1 / 7;
+  }
+  .md-8-13{
+    grid-column: 8 / 13;
+  }
+
+  .main{
+    padding: 0 3rem;
+  }
+
+  .menu_card{
+    width: 45%;
+    min-width: 8rem;
+  }
+}
+
+/* CELPHONE */
+@media screen and (max-width: 40.625rem) {
+  .sm-12, .section_title{
+    grid-column: span 12;
+  }
+
+  .main{
+    padding: 0 1rem;
+  }
+
+  .menu_card{
+    width: 100%;
+  }
+  *{
+    outline: 1px dashe;
+  }
+
+  .card_image{
+    height: clamp(8rem, 50vw, 18rem);
+    width: 90%;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .btn-add {
+    max-width: clamp(9rem, 50vw, 15rem);
+  }
 }
